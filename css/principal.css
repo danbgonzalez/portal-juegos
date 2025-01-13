@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(149, 221, 217);
+}
+header {
+    background-color: #5DCFC7;   
+}
+
+#text-title {
+    color: rgb(255,229,132);
+    font-size: 36px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgb(28, 92, 138);
+    font-family: Pixelify Sans;
+}
+
+#text-title:hover {
+    color: rgb(138,109,219); 
+}
+
+
+#text-title2 {
+    color: rgb(138,109,219); 
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 1px 2px 2px rgb(28, 92, 138);
+    font-family: Pixelify Sans;
+}
+
+#text-title3 {
+    color: rgb(138,109,219); 
+    font-size: 27px;
+    font-weight: 800;
+    text-shadow: 1px 2px 2px rgb(28, 92, 138);
+    font-family: Pixelify Sans;
+}
+
+#text-title4 {
+    color: rgb(255,229,132);
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 1px 2px 2px rgb(28, 92, 138);
+    font-family: Pixelify Sans;
+}
+
+#title-game {
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(252,226,129);
+    text-shadow: 2px 2px 2px  rgb(138,109,219);
+    font-family: Pixelify Sans;
+}
+
+#text-title4:hover {
+    color: rgb(138,109,219); 
+}
+
+#card-color1 {
+    background-color: rgb(30,94,132);
+}
+
+#card-color2{
+    background-color: rgb(86,191,220);
+}
+
+#card-color3 {
+    background-color: rgb(255,97,98);
+}
+
+#card-color4 {
+    background-color: rgb(255,106,182);
+}
+
+#card-color5 {
+    background-color: rgb(18,214,160);
+}
+
+#card-color6 {
+    background-color: #5DCFC7;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(28, 92, 138);
+    color: rgb(255,229,132);
+    background-color: rgb(138,109,219);
+    font-family: Pixelify Sans;
+    border: none;
+}
+.btn:hover{
+    background-color: rgb(255,229,132);
+    color:  rgb(138,109,219);
+    font-family: Pixelify Sans;
+}
+
+.card {
+    border: none;
+}
+
+.img-thumbnail {
+    padding: 0;
+}
+
+
+.card-footer {
+    border: none;
+    background-color: rgba(var(--bs-body-color-rgb), 0.0);
+}
+
+
+.loader-page {
+    position: fixed;
+    overflow: hidden;
+    z-index: 25000;
+    background: rgb(149, 221, 217); /*#001E3C;*/
+    backdrop-filter: blur(2px);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+    .loader-page::before {
+        content: "";
+        overflow: hidden;
+        position: absolute;
+        border: 2px solid rgb(50, 150, 176);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border-left: 2px solid rgba(50, 150, 176,0);
+        border-top: 2px solid rgba(50, 150, 176,0);
+        animation: rotarload 1s linear infinite;
+        transform: rotate(0deg);
+    }
+
+@keyframes rotarload {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.loader-page::after {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    border: 2px solid rgba(50, 150, 176,.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid rgba(50, 150, 176, 0);
+    border-top: 2px solid rgba(50, 150, 176, 0);
+    animation: rotarload 1s ease-out infinite;
+    transform: rotate(0deg);
+}
+
